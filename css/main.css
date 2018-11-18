@@ -1,0 +1,34 @@
+* {
+    transition: 0.5s ease;
+}
+
+
+#image img {
+    height: 500px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#h5 {
+    background-color: darkseagreen;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 100%;
+    margin-top: 150px;
+}
+
+#title,
+#h5 {
+    font-family: 'Indie Flower', cursive;
+}
+
+.row {
+    margin: 40px;
+}
+
+
+@media (max-width:987px) {
+    #h5 {
+        margin-top: 20px;
+    }
+}
