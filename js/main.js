@@ -22,13 +22,26 @@ $.ajax({
         var myImg = document.getElementById("image");
         myImg.innerHTML = '<img src=' + data.url + '>'
 
+        var myInfo = document.getElementById('info');
+        myInfo.innerText = data.explanation;
 
-        var myh5 = document.getElementById('h5');
-        myh5.innerText = data.explanation;
-
-        myh5.style.backgroundColor = '' + getRandomColor() + ''
+        myInfo.style.backgroundColor = color();
 
     },
 
     type: "GET"
-})
+});
+
+
+function color() {
+
+    var dayArray = [0, 1, 2, 3, 4, 5, 6, 7];
+    var colorArray = ["#39CCCC", "#FF4136", "#0074D9", "#FFDC00", "#3D9970", "#FF851B", "#9BBDBB", "#01FF70"];
+    console.log(dayArray);
+    console.log(colorArray);
+    for (i = 0; i < dayArray.length; i++) {
+        if (new Date().getDay() == dayArray[i]) {
+            return color = colorArray[i];
+        }
+    }
+}

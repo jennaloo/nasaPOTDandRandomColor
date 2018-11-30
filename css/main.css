@@ -4,21 +4,17 @@
 
 
 #image img {
-    height: 500px;
+    width: 100%;
     margin: 10px;
-    border-radius: 10px;
 }
 
-#h5 {
-    background-color: darkseagreen;
-    border-radius: 10px;
+#info {
     font-size: 20px;
     height: 100%;
-    margin-top: 150px;
 }
 
 #title,
-#h5 {
+#info {
     font-family: 'Indie Flower', cursive;
 }
 
@@ -28,7 +24,5 @@
 
 
 @media (max-width:987px) {
-    #h5 {
-        margin-top: 20px;
-    }
+    #h5 {}
 }
